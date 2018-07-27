@@ -1,0 +1,33 @@
+.list{
+    padding: 20px;
+    margin-top:20px;
+    background-color: #fff6e0c9;
+    
+}
+
+.fa-thumbs-up{
+    color: green;
+    font-size: 25px;
+}
+
+.fa-thumbs-down{
+    color: red;
+    font-size: 25px;
+}
+
+.fa-trash{
+    font-size: 25px;
+    color: black;
+
+}
+i{
+    padding: 8px;
+}
+.rating{
+    font-size: 24px;
+    padding-left:15px;
+}
+
+h3{
+    padding: 30px 15px;;
+}

@@ -1,0 +1,24 @@
+<div class= "container-fluid">
+<h3>New Quote:</h3>
+<form class="row" (submit)="onSubmit(formData)" #formData="ngForm">
+    <div class="col-sm-12">
+        <label for="newQuote">Details</label>
+        <textarea class="form-control" rows="4" [(ngModel)]="newQuote.details" required name="details" #details="ngModel"></textarea>
+        </div>
+        <div class="col-sm-4">
+            <label for="Author">Author</label>
+            <input type="text" class="form-control" [(ngModel)]="newQuote.author" required name="author" #author="ngModel">
+          </div>
+          <button class="btn btn-info" [disabled]="!formData.valid">Add</button>
+</form>
+
+<div>
+    <span *ngIf="!details.valid" class='invalid'>Quote is required.</span>
+    <div></div>
+    <span *ngIf="!author.valid" class='invalid'>Author is required.</span>
+</div>
+</div>
+
+
+
+

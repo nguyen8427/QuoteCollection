@@ -1,0 +1,17 @@
+<h3>List of Quotes:</h3>
+<div class="container-fluid list" *ngFor="let quote of quotes">
+<div class="row">
+    <div class="col-sm-8">
+        <p>{{quote.details}}</p> 
+        <span>{{quote.author}}</span>
+    </div>
+    <div class="col-sm-4"> 
+        <span class="rating">{{quote.rating}}</span>
+        <i (click)="likes(quote)" class="fa fa-thumbs-up icon"></i>
+        <i (click)="disLikes(quote)" class="fa fa-thumbs-down icon"></i>
+        <i (click)="delete(quote)" class="fa fa-trash icon"></i>
+      </div>
+
+  </div>
+
+</div>
